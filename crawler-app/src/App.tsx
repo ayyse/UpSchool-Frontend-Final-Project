@@ -1,13 +1,20 @@
 import './App.css'
 import MenuBar from "./components/MenuBar.tsx";
-import Console from "./components/Console.tsx";
-
+import {Route, Routes} from "react-router-dom";
+import HomePage from "./pages/HomePage.tsx";
+import OrdersPage from "./pages/OrdersPage.tsx";
+import NotFoundPage from "./pages/NotFoundPage.tsx";
 function App() {
 
   return (
     <>
         <MenuBar />
-        <Console />
+
+        <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/orders" element={<OrdersPage />} />
+            <Route path="*" element={<NotFoundPage />} />
+        </Routes>
     </>
   )
 }

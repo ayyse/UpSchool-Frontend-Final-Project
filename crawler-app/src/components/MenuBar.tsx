@@ -1,5 +1,6 @@
 import { Component } from 'react'
 import { Button, Dropdown, Menu } from 'semantic-ui-react'
+import {NavLink} from "react-router-dom";
 
 export default class MenuExampleSizeHuge extends Component {
     state = { activeItem: 'home' }
@@ -13,11 +14,15 @@ export default class MenuExampleSizeHuge extends Component {
             <Menu size='huge'>
                 <Menu.Item
                     name='home'
+                    as={NavLink}
+                    to="/"
                     active={activeItem === 'home'}
                     onClick={this.handleItemClick}
                 />
                 <Menu.Item
                     name='orders'
+                    as={NavLink}
+                    to="/orders"
                     active={activeItem === 'orders'}
                     onClick={this.handleItemClick}
                 />

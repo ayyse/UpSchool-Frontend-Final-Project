@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
-import {Button, Dropdown, Input} from 'semantic-ui-react';
+import { Button, Dropdown, Input } from 'semantic-ui-react';
 import { HubConnectionBuilder } from '@microsoft/signalr';
 import { v4 as uuidv4 } from 'uuid';
 import "../styles/Console.css"
 
-const Console = () => {
+const HomePage = () => {
     const [requestedAmount, setRequestedAmount] = useState(0);
     const [selectedCrawlType, setSelectedCrawlType] = useState('All');
     const [events, setEvents] = useState([]);
@@ -142,4 +142,4 @@ const Console = () => {
     );
 };
 
-export default Console;
+export default HomePage;
