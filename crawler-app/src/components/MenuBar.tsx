@@ -1,6 +1,7 @@
 import { Component } from 'react'
 import { Button, Dropdown, Menu } from 'semantic-ui-react'
 import {NavLink} from "react-router-dom";
+import "../styles/MenuBar.css"
 
 export default class MenuExampleSizeHuge extends Component {
     state = { activeItem: 'home' }
@@ -11,7 +12,7 @@ export default class MenuExampleSizeHuge extends Component {
         const { activeItem } = this.state
 
         return (
-            <Menu size='huge'>
+            <Menu size='huge' className="menu-wrapper">
                 <Menu.Item
                     name='home'
                     as={NavLink}

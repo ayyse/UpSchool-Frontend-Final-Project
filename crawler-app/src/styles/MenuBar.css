@@ -1,0 +1,11 @@
+/* Menüyü üstte sabit bir konumda tutar */
+.menu-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* Menüye sabit bir yükseklik ve diğer stilleri uygular */
+

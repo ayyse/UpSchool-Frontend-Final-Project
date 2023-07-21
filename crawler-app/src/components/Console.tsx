@@ -101,7 +101,7 @@ const Console = () => {
 
     return (
         <>
-            <div className="d-flex justify-content-center" style={{ marginBottom: "20px" }}>
+            <div className="d-flex justify-content-center">
                 <Input
                     value={requestedAmount}
                     onChange={(e) => setRequestedAmount(e.target.value)}
